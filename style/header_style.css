@@ -1,0 +1,119 @@
+.header {
+    background-color: #eff6ff;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px;
+    padding: 20px 30px;
+}
+
+/* .upper, .lower {
+    border: var(--test-border);
+    height: 50px;
+} */
+
+.upper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.upper img {
+    height: 20px;
+    width: 20px;
+}
+
+.upper > div:nth-child(1) {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+    position: relative;
+    top: 10px;
+}
+
+.upper > div:nth-child(1) > div:nth-child(2) {
+    position: relative;
+    right: 120px;
+}
+
+.upper > div:nth-child(1) input {
+    width: 400px;
+    height: 20px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    background-color: #93c5fd;
+
+    padding: 10px;
+}
+
+.upper > div:nth-child(2) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.upper > div:nth-child(2) > div:nth-child(1) {
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
+
+.upper > div:nth-child(2) > div:nth-child(2) {
+    height: 40px;
+    width: 40px;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.upper > div:nth-child(2) > div:nth-child(3) {
+    width: 150px;
+    position: relative;
+    top: 10px;
+    right: 20px;
+}
+
+.lower {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.lower > div:nth-child(1) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.lower > div:nth-child(1) > div:nth-child(1) {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: orange;
+}
+
+.lower > div:nth-child(1) > div:nth-child(2) {
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: relative;
+    right: 70px;
+}
+
+.lower > div:nth-child(1) > div:nth-child(2) span {
+    font-size: 0.8rem;
+}
+
+.lower > div:nth-child(2) {
+    width: 310px;
+    position: relative;
+    left: 140px
+}
+
+.lower > div:nth-child(2) button {
+    color: white;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    height: 30px;
+    width: 100px;
+    background-color: #2563eb;
+}
+
+
