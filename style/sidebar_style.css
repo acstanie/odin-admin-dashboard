@@ -2,31 +2,49 @@
     background-color: #60a5fa;
 
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 80px 220px 1fr;
+    grid-template-columns: 1fr
 }
 
-.sidebar > div:nth-child(1) div {
-    border: var(--test-border);
-    height: fit-content;
-    width: fit-content;
+
+.sidebar > div:nth-child(1) > div {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.sidebar > div:nth-child(1) span {
+    align-self: center;
 }
 
 .sidebar > div:nth-child(1) img {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
 
 .sidebar > div:nth-child(2) div {
-    border: var(--test-border);
-    height: fit-content;
-    width: fit-content;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+
+    padding-left: 20px;
 }
 
-.sidebar > div:nth-child(3) div{
-    border: var(--test-border);
-    height: fit-content;
-    width: fit-content;
+.sidebar > div:nth-child(2) div span {
+    align-self: center;
 }
+
+.sidebar > div:nth-child(3) div {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+
+    padding-left: 20px;
+}
+
+.sidebar > div:nth-child(3) div span {
+    align-self: center;
+}
+
 
 .sidebar > div:nth-child(2) img, .sidebar > div:nth-child(3) img {
     height: 25px;
